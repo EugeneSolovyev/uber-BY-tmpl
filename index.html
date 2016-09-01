@@ -7,29 +7,30 @@
     
     <title>Wojtow</title>
     
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/materialize.css/css/materialize.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="./js/materialize/js/materialize.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
     <div class="navbar-fixed">
-        <nav  class="black z-depth-2">
+        <nav  class="white z-depth-2">
             <div class="nav-wrapper">
-                <a href="#" class="logo-brand right"><img src="./src/uber_logo-26ae3ab5c22ed675f385178f1e2ebdaf94cb33f34e3231140c10932af935fb6d.png" alt="" class="responsive-img"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" class="logo-brand right"><img src="./src/Uber_logo.svg" alt="" class="responsive-img"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars black-text" aria-hidden="true"></i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#vacancy">Вакансии</a></li>
-                    <li><a href="#rent">Арендодателю</a></li>
+                    <li class="waves-effect li_link"><a href="#vacancy" class="black-text link">Вакансии</a></li>
+                    <li class="waves-effect li_link"><a href="#rent" class="black-text link">Арендодателю</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#vacancy" class="waves-effect">Вакансии</a></li>
-                    <li><a href="#rent" class="waves-effect">Арендодателю</a></li>
+                    <li class="waves-effect"><a href="#vacancy" class="link">Вакансии</a></li>
+                    <li class="waves-effect"><a href="#rent" class="link">Арендодателю</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,43 +40,42 @@
             <div class="fs col l12 m12 s12">
                 <div class="dscr col l7 m7 s7"></div>
                 <div class="content col l5 m5 s5">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quisquam natus amet, eum soluta repellat minus itaque deleniti, ducimus enim velit dolore, rerum libero. Dicta fuga voluptatibus, dignissimos minus.</p>
-                    <a href="#" class="btn black">Read more</a>
+                    <h1>Начните работать с Uber</h1>
+                    <p>Работа, в которой вы всегда на первом месте</p>
+                    <p>Ваш график работы. Ваш заработок. Полная свобода действий!</p>
+                    <a href="#vacancy" class="btn red darken-1"><i class="fa fa-briefcase" aria-hidden="true"></i> Работать с Uber</a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col l12 m12 s12">
-                <div class="vacancy col l6 m6 s12" id="vacancy">
-                    <h2>Вакансии</h2>
+            <div class="vacancy col l6 m6 s12" id="vacancy">
+                    <h2>Аренда авто</h2>
                     <h3>Требования</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ut maxime dolor nemo, sunt rem! Reprehenderit soluta inventore nulla! Minima ipsum earum, voluptatum nam nesciunt totam non, laudantium dolor fugiat!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum officiis, ducimus pariatur, praesentium, excepturi quas asperiores quibusdam eos consequatur sequi velit veniam dignissimos reprehenderit voluptas neque vel suscipit soluta blanditiis!</p>
                 </div>
-                <div class="vacancy col l6 m6 s12">
-                    <div class="card z-depth-3">
+                <div class="rent col l6 m6 s12">
+                    <div class="card z-depth-4">
                         <div class="card-content">
-                            <h3>Форма обратной связи для соискателя</h3>
+                            <h3>Оставить заявку соискателя</h3>
                             <form action="">
                                 <div class="input-field">
-                                    <input type="text" id="name_vacancy">
-                                    <label for="name_vacancy">Ваше имя</label>
+                                    <input type="text" id="name_rent">
+                                    <label for="name_rent">Ваше имя</label>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text" id="telephone_vacancy">
+                                    <input type="text" id="telephone_rent">
                                     <label for="telephone_vacancy">Ваш номер телефона</label>
                                 </div>
                                 <div class="input-field">
-                                    <textarea name="comment" id="comment_vacancy" class="materialize-textarea"></textarea>
+                                    <textarea name="comment" id="comment_rent" class="materialize-textarea"></textarea>
                                     <label for="comment_vacancy">Комментарий</label>
                                 </div>
-                                <button class="btn black">Отправить</button>
+                                <button class="btn green darken-1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Отправить</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="parallax-container">
             <div class="parallax">
@@ -91,9 +91,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum officiis, ducimus pariatur, praesentium, excepturi quas asperiores quibusdam eos consequatur sequi velit veniam dignissimos reprehenderit voluptas neque vel suscipit soluta blanditiis!</p>
                 </div>
                 <div class="rent col l6 m6 s12">
-                    <div class="card z-depth-3">
+                    <div class="card z-depth-4">
                         <div class="card-content">
-                            <h3>Форма обратной связи для арендодателя</h3>
+                            <h3>Оставить заявку арендодателя</h3>
                             <form action="">
                                 <div class="input-field">
                                     <input type="text" id="name_rent">
@@ -107,10 +107,22 @@
                                     <textarea name="comment" id="comment_rent" class="materialize-textarea"></textarea>
                                     <label for="comment_vacancy">Комментарий</label>
                                 </div>
-                                <button class="btn black">Отправить</button>
+                                <button class="btn blue"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Отправить</button>
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-uber col l12 m12 s12 blue">
+                <div class="footer-content col l6 m6 s12">
+                    <h2 class="white-text">Юридическая информация</h2>
+                </div>
+                <div class="footer-content col l6 m6 s12">
+                    <h2 class="white-text">Контактная информация</h2>
+                    <p class="white-text"><i class="fa fa-mobile" aria-hidden="true"></i> +375 (44) 777-26-12</p>
+                    <p class="white-text"></p>
                 </div>
             </div>
         </div>
